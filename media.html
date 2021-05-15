@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 
+
+Original Author: Jeffrey Kuhn
+Date Created:11-2-20
+Version: 2
+Date Last Modified: 02/19/2021
+Modified by: Ricky L. Del Vecchio
+Modification log: 
+11/2/2020: Page created
+11/3/2020: Placeholder image placed until Bootstrap is added.
+11/4/2020: Placeholder links added for Twitch, Facebook and youtube
+11/16/2020: Replaced placeholders with actual links to Twitch Facebook and Youtube channels.
+11/18/2020: Added tournament ID to main div to see how it would look.
+11/19/2020: Added Bootstrap. Added carousel for images to cycle through on.
+12/1/2020: Replaced placeholder images on carousel with actual images.
+
+ 02/19/2021: Updated navbar and links
+-->
+
+<title>CWI Gaming Club</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="images/favicon-16x16.png" type="image" sizes="16x16">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="script/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+     <!-- Header -->
+    <a href="index.html"><img src="images/CWI_gaming_club.png" alt="Club Logo" Style="color: #eeb111;" width="110px"/></a>
+    <h1>CWI Gaming Club</h1>
+    <!-- Navigation -->
+<nav>
+<img src="images/iconfinder_menu-alt_134216.png" alt="nav button" width="25px" id="nav" onclick="navClick()"/>
+<ul id="navigation" class="navhide">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="esports.html">Esports</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+</header>
+    <!-- Main -->
+<main>
+    <div id="tournament">
+    <!--<img src="images/placeholder.jpg" alt="club_photo" Style="color: #eeb111;"/>-->
+    <h2></h2>
+    <h2 Style="font-weight: bold;">Check out the types of things we do during club meetings and other activities.</h2>
+    <!-- Add images stuff here -->
+    <div id="photos">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/placeholder.jpg" alt="Club Activity, Photo by Ricky Del Vecchio" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/picture1.jpg" alt="Club Activity, Photo by Ricky Del Vecchio" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images/picture2.jpg" alt="Club Activity, Photo by Ricky Del Vecchio" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/picture3.jpg" alt="Club Activity, Photo by Ricky Del Vecchio" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/picture4.jpg" alt="Club Activity, Photo by Ricky Del Vecchio" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/picture5.jpg" alt="Club Activity, Photo by Ricky Del Vecchio" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/picture6.jpg" alt="Club Activity, Photo by Ricky Del Vecchio" style="width:100%;">
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+    <!--<img src="images/placeholder.jpg" alt="club_photo" width="50%" Style="color: #eeb111;"/>-->
+    <div id="media">
+    <h2 Style="font-weight: bold;">Find us live!</h2>
+    <p>During Esports and other events you can find us live at:
+    <br/><br/>Twitch: <a href="https://www.twitch.tv/cwi_gaming_club">Twitch Channel</a>
+    <br/><br/>Facebook: <a href="https://www.facebook.com/CWI.Gaming.Club">Facebook Channel</a>
+	<br/><br/>YouTube: <a href="https://www.youtube.com/channel/UCOUZ5eTS6cyiLmIAix2uT4A?sub_confirmation=1">YouTube Channel</a></p>
+    </div>
+    </div>
+</main>
+</body>
+<!-- Footer -->
+<footer><center>
+	<b><i>&copy; 2019-2021, CWI Gaming Club. All Rights Reserved&reg;.</i></b>
+</center></footer>
+</html>
