@@ -1,0 +1,480 @@
+/*
+
+Original Author: Jeffrey Kuhn
+Date Created: 9-25-20
+Version: 1
+Date Last Modified: 12-1-20
+Modified by: Jeffrey Kuhn
+Modification log:
+9/25/2020: Created
+9/28/2020: Adjusted some CSS
+9/29/2020: Adjusted CSS
+9/29/2020: Changed CSS for header and nav
+9/30/2020: Changed body to clear to see how it would look. Added color to background and changed margins on body
+10/2/2020: Modified CSS for h2 and p tags
+10/5/2020: Added CSS around picture in main. Adjusted things in body to account for new picture
+10/7/2020: Continued to try adjusting CSS to make picture look good on page.
+10/9/2020: Moved picture to background, made main transparent and added drop shadow
+10/12/2020: Adjusted CSS on h2 and p tags again to account for picture no longer being there
+10/20/2020: Added CSS for the landing page
+10/22/2020: Adjusted CSS for landing page
+10/23/2020: Adjusted more CSS on landing page by adding a min height to mobile layout
+11/2/2020: Added CSS for media page.
+11/3/2020: Added CSS for media page image.
+11/4/2020: Added CSS for the event page text to display colors for each type of event in the h2 tags.
+11/5/2020: Added CSS for the tournament page
+11/6/2020: Adjusted some CSS to make newsletter page fit more.
+11/9/2020: Added more CSS for the tournament pages
+11/10/2020: Adjusted the CSS for multiple pages
+11/11/2020: Added CSS for store page.
+11/13/2020: Adjusted CSS for contact page.
+11/16/2020: Adjusted CSS on store page.
+11/17/2020 and 11/18/2020: CSS adjustments were made.
+11/19/2020, 11/23 through 11/25 and 11/30/2020: CSS adjustments were made to account for added Bootstrap.
+12/1/2020: Final CSS adjustments were made and added CSS to account for added buttons to tournament page. Changed website background.
+
+02/19/2021: Rick added light updates and finishing touches before deployment. 
+*/
+/*Primary colors: #660000, #eeb111, and #cccc99 */
+
+
+/* hmtl style */
+html{
+	/*background-color: #cccc99;*/
+}
+
+/* body style */
+body {
+	margin: 0px;
+	background-size: cover;
+	background-image: url("../images/picture4.jpg");
+}
+
+/* header style */
+header{
+	width: 100%;
+	background-color: #660000;
+	display: block;
+	padding-top: 1em;
+}
+
+header img{
+	margin-left: 1em;
+}
+
+header h1{
+	color: #eeb111;
+	margin-bottom: 1em;
+	display: inline;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+
+/* nav style */
+nav{
+	background-color: rgb(80, 0, 0);
+}
+
+header img#nav{
+	display: none;
+}
+
+nav ul{
+	padding-top: .8em;
+	padding-bottom: .8em;
+	margin-bottom: 0em;
+}
+
+nav ul li{
+	display: inline;
+	list-style: none;
+	padding-right: 1.2em;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-style: oblique;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #eeb111;
+}
+
+
+/* main style */
+main{
+	width: 80%;
+	min-height: 500px;
+	margin-top: 4em;
+	margin-bottom: 3em;
+	margin right: 10%;
+	margin-left: 10%;
+	background-color: #cccc99;
+	opacity: 0.9;
+	box-shadow: 5px 0px 5px;
+}
+
+main#store{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+main div{
+	padding: 2em;
+	
+}
+
+
+
+main div#tournament{
+	text-align: center;
+}
+
+main div#tournament p{
+	margin-top: 1em;
+	margin-left: 0em;
+}
+
+main div#tournament a{
+	font-size: 1em;
+}
+
+main div#signup{
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+	text-align: left;
+}
+
+main#contact{
+	text-align: center;
+	padding-top: 1em;
+}
+
+main div#contact form{
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+	text-align: left;
+}
+
+main div#send{
+	text-align: center;
+}
+
+/* Div styles */
+div.formRow{
+	padding: 1em;
+}
+
+main div.carousel-inner{
+	padding: 0em;
+	opacity: 1;
+}
+
+main div#myCarousel{
+	padding: 0em;
+	opacity: 1;
+}
+
+main div.item{
+	padding: 0em;
+	opacity: 1;
+}
+
+main div h1 {
+	font-size: 2.6em;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: .3em;
+}
+
+main div h2{
+	margin-top: 1.7em;
+	margin-bottom: 1.7em;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+main div a{
+	font-size: 1.3em;
+	margin-top: 20px;
+}
+
+
+div#land{
+		padding-top: 5em;
+		}
+
+div#news{
+	text-align: center;
+}
+
+div#storeItem{
+	min-height: 250px;
+	margin-top: 1em;
+	margin-left: .5em;
+	margin-right: .5em;
+	border-style: solid;
+}
+
+div#storeText{
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+div#storeItem p{
+	margin-bottom: 1em;
+}
+
+div#storeItem img{
+	align: left;
+}
+
+div#media{
+	width: 60%;
+	text-align: left; 
+	margin-left: 20%;
+}
+
+div#photos{
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	opacity: 1;
+}
+
+h2{
+	
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h2#event{
+	color: rgb(4, 149, 4);
+}
+
+h2#gamenight{
+	color: blue;
+}
+
+/*main div img{
+	width: 600px;
+	float: right;
+	margin-right: 3em;
+	margin-bottom: 1em;
+}*/
+
+main div p{
+	margin-top: 0em;
+	margin-left: 1.5em;
+	font-size: 1.5em;
+}
+
+/* Button styles */
+
+input#button{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 12px;
+	background-color: #660000;
+	color: #eeb111;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+button#buy{
+	float: right;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 12px;
+	background-color: #660000;
+	color: #eeb111;
+	margin-left: .5em;
+	margin-right: .5em;
+	margin-top: .3em;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+button#tournament{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 12px;
+	background-color: #660000;
+	color: #eeb111;
+	margin-left: .5em;
+	margin-right: .5em;
+	margin-top: .3em;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/* footer style */
+footer{
+	background-color: #660000;
+	padding-top: 1em;
+	padding-bottom: 1.7em;
+	color: white;
+
+}
+
+footer p{
+	margin-top: 0em;
+	margin-bottom: 0em;
+	color: white;
+	text-align: center;
+}
+
+@media screen and (max-width: 480px){
+
+	/* Mobile Body Style*/
+	body{
+		background-image: none;
+	}
+
+	/* Mobile Nav Style*/
+	header img#nav{
+		display: block;
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
+	nav ul{
+		padding-top: 0em;
+		padding-bottom: 0em;
+		padding-left: 0em;
+		margin-top: 0em;
+		margin-bottom: 0em;
+		background-color: rgb(125, 0, 0);
+	}
+
+	nav ul li{
+		display: block;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-left: 1em;
+		font-weight: bold;
+		font-style: oblique;
+		border-style: solid;
+		border-color: rgb(140, 0, 0);
+		width: 100%;
+		height: 100%;
+	}
+
+	nav ul li a{
+		width: 100%;
+		height: 100%;
+	}
+
+	.show{
+		display: block;
+	}
+
+	.hide{
+		display: none;
+	}
+
+	.navhide{
+		display: none;
+	}
+	/* Mobile Main Styles */
+	main{
+		width: 100%;
+		min-height: 1000px;
+		margin-top: 0em;
+		margin-bottom: 0em;
+		margin right: 0em;
+		margin-left: 0em;
+		background-color: #cccc99;
+		opacity: 1;
+		box-shadow: none;
+	}
+
+	main div p{
+		margin-left: 1em;
+	}
+	/* Mobile Div style*/
+	div#contact{
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+
+	main div#contact form{
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+		text-align: left;
+	}
+
+	div#storeItem{
+		width: 100%;
+		height: 450px;
+		margin-top: 0em;
+		margin-left: 0em;
+		padding: 0em;
+		padding-top: 1em;
+		text-align: none;
+	}
+
+	div#storeItem img{
+		width: 30%;
+		margin-left: 35%;
+		margin-right: 35%;
+	}
+	
+	div#storeText{
+		width: 100%;
+		margin-top: 10px;
+		padding-left: 1em;
+		padding-right: .5em;
+		text-align: center;
+	}
+
+	div#media{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	div#media p{
+		margin-top: 1em;
+	}
+
+	div#photos{
+		width: 100%;
+		margin: 0em;
+	}
+
+	main div#signup{
+		width: 100%;
+		margin-left: 0em;
+		margin-right: 0em;
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+
+	label#number{
+		display: none;
+	}
+
+	button#buy{
+		float: none;
+	}
+
+
+	/* Mobile landing page style */
+
+	a#landing{
+		color: #660000;
+	}
+
+}
